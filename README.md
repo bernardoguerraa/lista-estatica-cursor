@@ -36,3 +36,34 @@ union celula {
     struct { int quant, first, last, free; } cabecalho;
     struct { int next, prev; dados reg; } lista;
 };
+
+---
+
+## ▶️ Como usar
+
+
+Compile o código:
+
+bash
+Copiar
+Editar
+g++ -o lista lista.cpp
+Execute o programa:
+
+bash
+Copiar
+Editar
+./lista
+Interaja com o menu:
+
+css
+Copiar
+Editar
+Menu:
+1 - Inserir
+2 - Remover
+3 - Pesquisar
+4 - Imprimir registros
+5 - Imprimir estrutura
+6 - Inserir ordenado
+0 - Sair
