@@ -25,40 +25,23 @@ Este projeto implementa uma **lista duplamente encadeada com cursor** em C++, ut
 
 ---
 
-## 📦 Estrutura de Dados
-
-```cpp
-struct dados {
-    int chave;
-};
-
-union celula {
-    struct { int quant, first, last, free; } cabecalho;
-    struct { int next, prev; dados reg; } lista;
-};
-
----
-
 ## ▶️ Como usar
 
+1. Compile o código:
 
-Compile o código:
-
-bash
-Copiar
-Editar
+```
 g++ -o lista lista.cpp
-Execute o programa:
+```
 
-bash
-Copiar
-Editar
+2. Execute o programa:
+
+```
 ./lista
-Interaja com o menu:
+```
 
-css
-Copiar
-Editar
+3. Interaja com o menu:
+
+```
 Menu:
 1 - Inserir
 2 - Remover
@@ -67,3 +50,46 @@ Menu:
 5 - Imprimir estrutura
 6 - Inserir ordenado
 0 - Sair
+```
+
+---
+
+## 🧪 Exemplo de uso
+
+```
+Tamanho da lista: 10
+
+Menu:
+1 - Inserir
+Chave: 5
+
+1 - Inserir
+Chave: 8
+
+5 - Imprimir estrutura
+...
+```
+
+---
+
+## 🛠️ Requisitos
+
+- Compilador C++ (ex: `g++`)
+- Terminal para execução interativa
+
+---
+
+## 📚 Aprendizado
+
+Este projeto é ideal para estudantes de **estrutura de dados**, pois demonstra:
+
+- Implementação de listas sem ponteiros reais (usando índices)
+- Gerenciamento manual de memória simulada
+- Uso avançado de `union` para múltiplas interpretações de dados
+
+---
+
+## 👨‍💻 Autor
+
+**Bernardo Carvalho Guerra**
+
